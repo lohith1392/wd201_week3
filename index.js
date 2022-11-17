@@ -35,7 +35,7 @@ const todoList = () => {
         printString = ""
         for (let i = 0; i < list.length; i++) {
             x = list[i].completed ? '[x]' : '[ ]'
-            da = list[i].dueDate === today ? '' : " " + today
+            da = list[i].dueDate === today ? '' : " " + list[i].dueDate;
             printString = printString + x + " " + list[i].title + da + "\n";
         }
         return printString
